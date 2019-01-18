@@ -80,4 +80,8 @@ typings/
 .dynamodb/
 
 #package files
-.json
+package.json
+package-lock.json
+
+# art
+img/
