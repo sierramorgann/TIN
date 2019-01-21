@@ -1,16 +1,41 @@
 @import 'base';
 
+body {
+	background-color: pink;
+}
 
 p {
-	font-family: Arial Narrow;
+	font-family: $font;
+	color: $color;
 }
-
 
 img {
-	width: 100%;
+	position: absolute;
 }
 
+.inputbutton {
+	
 
+	input {
+		height: 50px;
+		border-style: none;
+		background-color: $color;
+		width: 280px;
+		color: white;
+		font-size: 20px;
+		font-family: $font;
+		font-weight: lighter;
+	}
 
-
+	button {
+		height: 50px;
+		border-style: none;
+		background-color: $color;
+		width: 50px;
+		color: white;
+		font-size: 20px;
+		font-family: $font;
+		font-weight: lighter;
+	}
+}
 

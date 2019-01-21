@@ -1,0 +1,28 @@
+body {
+  background-color: pink; }
+
+p {
+  font-family: Arial Narrow, sans-serif;
+  color: #FF0000; }
+
+img {
+  position: absolute; }
+
+.inputbutton input {
+  height: 50px;
+  border-style: none;
+  background-color: #FF0000;
+  width: 280px;
+  color: white;
+  font-size: 20px;
+  font-family: Arial Narrow, sans-serif;
+  font-weight: lighter; }
+.inputbutton button {
+  height: 50px;
+  border-style: none;
+  background-color: #FF0000;
+  width: 50px;
+  color: white;
+  font-size: 20px;
+  font-family: Arial Narrow, sans-serif;
+  font-weight: lighter; }
