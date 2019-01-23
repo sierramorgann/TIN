@@ -1,7 +1,7 @@
 @import 'base';
 
 body {
-	background-color: pink;
+	background-color: rgb(255,123,172);
 }
 
 p {
@@ -11,10 +11,19 @@ p {
 
 img {
 	position: absolute;
+	top: 12.5%;
+	left: 12.5%;
+	width: 75vw; 
+	height: 75vh;
+}
+
+.container {
+	width: 100%;
 }
 
 .inputbutton {
-	
+	z-index: 1000;
+	position: relative;
 
 	input {
 		height: 50px;
@@ -28,7 +37,8 @@ img {
 	}
 
 	button {
-		height: 50px;
+		height: 51px;
+		margin-left: 5px;
 		border-style: none;
 		background-color: $color;
 		width: 50px;
@@ -37,5 +47,9 @@ img {
 		font-family: $font;
 		font-weight: lighter;
 	}
+}
+
+.bottomTxt {
+
 }
 
