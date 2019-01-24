@@ -1,29 +1,49 @@
 body {
   background-color: #ff7bac; }
 
+#second-page {
+  background: linear-gradient(-45deg, #ff7bac, red, red, #ff7bac);
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  background-size: 400% 400%; }
+
+/* ------- > second page gradient background animation*/
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+/*------------------> end */
 p {
   font-family: Arial Narrow, sans-serif;
   color: red; }
 
-#svg1 {
-  width: 85vw;
-  height: 85vh;
-  position: relative; }
-
 .container {
-  width: 100%;
-  text-align: center; }
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-image: url("../img/SVG/Asset1.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .inputbutton {
   z-index: 1000;
-  position: absolute;
-  top: 250px;
-  left: 40%; }
+  position: relative;
+  padding-top: 23%; }
   .inputbutton input {
     height: 50px;
     border-style: none;
     background-color: red;
-    width: 280px;
+    width: 300px;
     color: white;
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
@@ -38,3 +58,15 @@ p {
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
     font-weight: lighter; }
+
+.bottomTxt {
+  padding-top: 15%;
+  letter-spacing: -1px; }
+
+.topLine {
+  margin: 0; }
+
+.bolder {
+  font-weight: bold;
+  font-style: italic;
+  margin: 0; }
