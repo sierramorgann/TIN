@@ -9,21 +9,22 @@ p {
 	color: $color;
 }
 
-img {
-	position: absolute;
-	top: 12.5%;
-	left: 12.5%;
-	width: 75vw; 
-	height: 75vh;
+#svg1 {
+	width: 85vw; 
+	height: 85vh;
+	position: relative;
 }
 
 .container {
 	width: 100%;
+	text-align: center;
 }
 
 .inputbutton {
 	z-index: 1000;
-	position: relative;
+	position: absolute;
+	top: 250px;
+	left: 40%;
 
 	input {
 		height: 50px;
