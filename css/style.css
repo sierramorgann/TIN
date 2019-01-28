@@ -1,7 +1,4 @@
 body {
-  background-color: #ff7bac; }
-
-#second-page {
   background: linear-gradient(45deg, #ff7bac, red, #ff7bac, red);
   -webkit-animation: Gradient 50s ease infinite;
   animation: Gradient 50s ease infinite;
@@ -31,7 +28,7 @@ iframe {
 /*------------------> end */
 p {
   font-family: Arial Narrow, sans-serif;
-  color: red; }
+  color: #d20000; }
 
 .container {
   height: 98vh;
@@ -57,24 +54,31 @@ p {
   top: 45%;
   width: 100%; }
   .inputbutton input {
-    height: 50px;
+    height: 10.5px;
     border-style: none;
-    background-color: red;
+    background-color: #d20000;
     width: 300px;
     color: white;
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
     font-weight: lighter; }
+  .inputbutton input:focus, .inputbutton textarea:focus, .inputbutton select:focus {
+    outline: none; }
+  .inputbutton input[type=text] {
+    padding: 20px; }
   .inputbutton button {
     height: 51px;
     margin-left: 5px;
     border-style: none;
-    background-color: red;
+    background-color: #d20000;
     width: 50px;
     color: white;
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
-    font-weight: lighter; }
+    font-weight: lighter;
+    outline: none; }
+  .inputbutton button:focus, .inputbutton select:focus {
+    outline: none; }
 
 .bottomTxt {
   letter-spacing: -1px;

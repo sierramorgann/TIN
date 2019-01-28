@@ -1,10 +1,6 @@
 @import 'base';
 
 body {
-	background-color: rgb(255,123,172);
-}
-
-#second-page {
 	background: linear-gradient(45deg, rgb(255,123,172), rgb(255,0,0), rgb(255,123,172), rgb(255,0,0));
 	-webkit-animation: Gradient 50s ease infinite;
 	-moz-animation: Gradient 50s ease infinite;
@@ -90,7 +86,7 @@ p {
 	width: 100%;
 
 	input {
-		height: 50px;
+		height: 10.5px;
 		border-style: none;
 		background-color: $color;
 		width: 300px;
@@ -99,6 +95,14 @@ p {
 		font-family: $font;
 		font-weight: lighter;
 	}
+
+	input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+    input[type=text] {
+    	padding: 20px;
+    }
 
 	button {
 		height: 51px;
@@ -110,6 +114,11 @@ p {
 		font-size: 20px;
 		font-family: $font;
 		font-weight: lighter;
+		outline: none;
+	}
+
+	button:focus, select:focus {
+		outline: none;
 	}
 }
 
