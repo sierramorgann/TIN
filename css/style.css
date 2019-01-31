@@ -48,11 +48,27 @@ p {
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }*/
+.hidden {
+  display: none; }
+
+.display {
+  display: block; }
+
 .inputbutton {
   z-index: 1000;
   position: absolute;
   top: 45%;
   width: 100%; }
+  .inputbutton .popUp {
+    width: 100%;
+    z-index: 100000;
+    position: absolute;
+    top: -15%;
+    display: none; }
+    .inputbutton .popUp p {
+      height: 150px;
+      background-color: white;
+      margin: 0 25%; }
   .inputbutton input {
     height: 10.5px;
     border-style: none;
@@ -61,7 +77,8 @@ p {
     color: white;
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
-    font-weight: lighter; }
+    font-weight: lighter;
+    text-transform: uppercase; }
   .inputbutton input:focus, .inputbutton textarea:focus, .inputbutton select:focus {
     outline: none; }
   .inputbutton input[type=text] {

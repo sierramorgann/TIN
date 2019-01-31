@@ -79,11 +79,33 @@ p {
   	transform: translateY(-50%);
 }*/
 
+.hidden {
+	display: none;
+}
+
+.display {
+	display: block;
+}
+
 .inputbutton {
 	z-index: 1000;
 	position: absolute;
 	top: 45%;
 	width: 100%;
+
+	.popUp {
+		width: 100%;
+		z-index: 100000;
+		position: absolute;
+		top: -15%;
+		display: none;
+
+		p {
+			height: 150px;
+			background-color: white; 
+			margin: 0 25%; 
+		}
+	}
 
 	input {
 		height: 10.5px;
@@ -94,6 +116,7 @@ p {
 		font-size: 20px;
 		font-family: $font;
 		font-weight: lighter;
+		text-transform: uppercase;
 	}
 
 	input:focus, textarea:focus, select:focus{
