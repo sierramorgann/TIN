@@ -164,6 +164,23 @@ p {
   display: none; }
 
 /*< ----------------------- Meida Queries ------------>*/
+@media (min-width: 1020px) {
+  .inputbutton {
+    top: 47%; }
+    .inputbutton input {
+      width: 200px;
+      height: 45px; }
+    .inputbutton input[type=text] {
+      padding: 7px; }
+    .inputbutton button {
+      height: 60px; }
+
+  .media {
+    top: 28%; }
+
+  .vid iframe {
+    height: 41vh;
+    width: 100%; } }
 @media (max-width: 768px) {
   .container {
     background-size: 100%; }
@@ -172,9 +189,37 @@ p {
     margin-top: 20%; }
 
   .inputbutton {
-    top: 46%; }
+    top: 45%; }
     .inputbutton input {
       width: 200px;
       height: 45px; }
+    .inputbutton input[type=text] {
+      padding: 7px; }
     .inputbutton button {
-      height: 46px; } }
+      height: 60px; }
+
+  .vid iframe {
+    height: 28vh;
+    width: 98%; }
+
+  .media {
+    top: 35%;
+    width: 96vw; }
+
+  #btsPhotos {
+    top: 25%;
+    margin-top: 0; }
+    #btsPhotos a {
+      text-decoration: none; }
+      #btsPhotos a img {
+        padding: 1%; }
+
+  #fullPage {
+    background-size: 99%;
+    height: 100vh;
+    width: 100vw; }
+    #fullPage .bigTxt {
+      font-size: 36px;
+      margin-top: 71%; }
+    #fullPage .bottomTxtBlk {
+      margin-top: 0; } }

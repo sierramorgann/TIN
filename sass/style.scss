@@ -234,11 +234,38 @@ p {
 
 /*< ----------------------- Meida Queries ------------>*/
 
-@media (max-width: $break-small) {
+@media (min-width: $break-large) {
+	.inputbutton {
+		top: 47%;
 
+		input {
+			width: 200px;
+			height: 45px;
+		}
+
+		input[type=text] {
+			padding: 7px;
+		}
+
+		button {
+			height: 60px;
+		}
+	}
+
+	.media {
+		top: 28%;
+	}
+
+	.vid {
+		iframe {
+			height: 41vh;
+			width: 100%;
+		}
+	}
 }
 
 @media (max-width: $break-med) {
+
 	.container {
 		background-size: 100%;
 	}
@@ -248,15 +275,58 @@ p {
 	}
 
 	.inputbutton {
-		top: 46%;
+		top: 45%;
 
 		input {
 			width: 200px;
 			height: 45px;
 		}
 
+		input[type=text] {
+			padding: 7px;
+		}
+
 		button {
-			height: 46px;
+			height: 60px;
+		}
+	}
+
+	.vid {
+		iframe {
+			height: 28vh;
+			width: 98%;
+		}
+	}
+
+	.media {
+		top: 35%;
+		width: 96vw;
+	}
+
+
+	#btsPhotos {
+		top: 25%;
+		margin-top: 0;
+
+		a {
+			text-decoration: none;
+			img {
+				padding: 1%;
+			}
+		}
+	}
+
+	#fullPage {
+		background-size: 99%;
+		height: 100vh;
+		width: 100vw;
+
+		.bigTxt {
+			font-size: 36px;
+			margin-top: 71%;
+		}
+		.bottomTxtBlk {
+			margin-top: 0;
 		}
 	}
 }
