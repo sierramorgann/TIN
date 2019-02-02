@@ -1,3 +1,4 @@
+/*<---------------- Gradient Background -------------->*/
 body {
   background: linear-gradient(45deg, #ff7bac, red, #ff7bac, red);
   -webkit-animation: Gradient 50s ease infinite;
@@ -5,12 +6,6 @@ body {
   background-size: 800% 800%;
   text-align: center; }
 
-iframe {
-  margin-top: 4.5%;
-  height: 80vh;
-  width: 80vw; }
-
-/* ------- > second page gradient background animation*/
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%; }
@@ -25,7 +20,6 @@ iframe {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-/*------------------> end */
 p {
   font-family: Arial Narrow, sans-serif;
   color: #d20000; }
@@ -39,20 +33,6 @@ p {
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center; }
-
-/*.vert-center {
-	position: relative;
-  	top: 50%;
-  	height: 75%;
-  	-webkit-transform: translateY(-50%);
-  	-ms-transform: translateY(-50%);
-  	transform: translateY(-50%);
-}*/
-.hidden {
-  display: none; }
-
-.display {
-  display: block; }
 
 .inputbutton {
   z-index: 1000;
@@ -77,8 +57,19 @@ p {
     color: white;
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
-    font-weight: lighter;
-    text-transform: uppercase; }
+    font-weight: lighter; }
+  .inputbutton ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white; }
+  .inputbutton ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white; }
+  .inputbutton :-ms-input-placeholder {
+    /* IE 10+ */
+    color: white; }
+  .inputbutton :-moz-placeholder {
+    /* Firefox 18- */
+    color: white; }
   .inputbutton input:focus, .inputbutton textarea:focus, .inputbutton select:focus {
     outline: none; }
   .inputbutton input[type=text] {
@@ -110,6 +101,42 @@ p {
   font-style: italic;
   margin: 0; }
 
+/*< ------------ Second Page Styling ------------- >*/
+.mediaInsert {
+  height: 98vh;
+  width: 98vw;
+  position: relative;
+  text-align: center; }
+
+.media {
+  position: absolute;
+  top: 40%;
+  width: 100%; }
+
+/*#sndClip1 {
+	display: none;
+}
+
+#sndClip2 {
+	display: none;
+}
+
+#rgb {
+	display: none;
+}
+
+#tender {
+	display: none;
+}
+
+#btsPhotos {
+	display: none;
+}
+
+#fullPage {
+	display: none;
+}*/
+/*< ----------------------- Meida Queries ------------>*/
 @media (max-width: 768px) {
   .container {
     background-size: 100%; }
