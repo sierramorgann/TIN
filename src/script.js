@@ -30,6 +30,7 @@ function change() {
 
 // Inputs to Outputs
 
+var input = document.getElementById("input");
 var output = document.querySelector(".output");
 var button = document.querySelector("button");
 var one =  /^.*\b(credits|miyazaki|kiki|motorcycle|dream witch|witch|dreamsequence004)\b.*$/;
@@ -39,13 +40,37 @@ var four = /^.*\b(dreamsequence001)\b.*$/;
 var five = /^.*\b(dreamsequence002)\b.*$/;
 var six = /^.*\b(hello|wtf|ok|hi|what|help|go|yes|no)\b.*$/;
 
-function hideShow(x) {
-	if (x.style.display === "none") {
-    	x.style.display = "block";
-  	} else {
-    	x.style.display = "none";
-  	}
+var containElement = document.getElementById('noOne');
+var bottomTxt = document.getElementById('btmTxt');
+var media = document.getElementsByClassName("media");
+
+function showOut(x) { 
+	containElement.style.background = 'none';
+	bottomTxt.style.display = 'none';
+	button.style.display = 'none';
+	input.style.display = 'none';
+    x.style.display = "block";
 }
+
+function hideOut() {
+	containElement.style.background = '';
+	bottomTxt.style.display = '';
+	button.style.display = '';
+	input.style.display = '';
+
+	for (var i = 0, max = media.length; i < max; i++) {
+    	media[i].style.display = "none";
+	}
+	media.style.display = "none";
+}
+
+document.getElementById("mod").addEventListener("click", function(){
+	hideOut();
+})
+
+document.getElementById("gogo").addEventListener("click", function(){
+  gogo();
+});
 
 function gogo() {
 	var input = document.getElementById("input").value;
@@ -60,40 +85,32 @@ function gogo() {
 
 	// if result is correct take to next page
 	if (resultOne == true) {
-		var m = document.getElementById("#sndClip1");
-		console.log(m);
-		hideShow(m);
-		location.href = "vid.html";
-	}
-	if (resultTwo == true) {
-		location.href = "vid.html";
+		var m = document.getElementById("sndClip1");
+		showOut(m);
+	} 
+	else if (resultTwo == true) {
 		var y = document.getElementById("sndClip2");
-		hideShow(y);
-	}
-	if (resultThree == true) {
-		location.href = "vid.html";
+		showOut(y);
+	} 
+	else if (resultThree == true) {
 		var z = document.getElementById("btsPhotos");
-		hideShow(z);
-	}
-	if (resultFour == true) {
-		location.href = "vid.html";
+		showOut(z);
+	} 
+	else if (resultFour == true) {
 		var q = document.getElementById("rgb");
-		hideShow(q);
-	}
-	if (resultFive == true) {
-		location.href = "vid.html";
+		showOut(q);
+	} 
+	else if (resultFive == true) {
 		var w = document.getElementById("tender");
-		hideShow(w);
-	}
-	if (resultSix == true) {
-		location.href = "vid.html";
+		showOut(w);
+	} 
+	else if (resultSix == true) {
 		var f = document.getElementById("fullPage");
-		hideShow(f);
-	}
-	// display error message if no match 
-	else if (result == false) {
+		showOut(f);
+	}  else {
 		changecolors();
 	}
+	
 	
 }
 
