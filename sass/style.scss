@@ -84,7 +84,7 @@ p {
 	}
 
 	input {
-		height: 10.5px;
+		height: auto;
 		border-style: none;
 		background-color: $color;
 		width: 300px;
@@ -113,7 +113,7 @@ p {
     }
 
     input[type=text] {
-    	padding: 20px;
+    	padding: 14px;
     }
 
 	button {

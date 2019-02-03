@@ -50,7 +50,7 @@ p {
       background-color: white;
       margin: 0 25%; }
   .inputbutton input {
-    height: 10.5px;
+    height: auto;
     border-style: none;
     background-color: #d20000;
     width: 300px;
@@ -74,7 +74,7 @@ p {
   .inputbutton input:focus, .inputbutton textarea:focus, .inputbutton select:focus {
     outline: none; }
   .inputbutton input[type=text] {
-    padding: 20px; }
+    padding: 14px; }
   .inputbutton button {
     height: 51px;
     margin-left: 5px;
