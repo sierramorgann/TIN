@@ -43,7 +43,7 @@ var six = /^.*\b(hello|wtf|ok|hi|what|help|go|yes|no)\b.*$/;
 
 var containElement = document.getElementById('noOne');
 var bottomTxt = document.getElementById('btmTxt');
-var media = document.getElementsByClassName("media");
+var media = document.getElementById("fullPage");
 
 function showOut(x) { 
 	// containElement.style.background = 'none';
@@ -58,10 +58,6 @@ function hideOut() {
 	bottomTxt.style.display = '';
 	button.style.display = '';
 	input.style.display = '';
-
-	for (var i = 0, max = media.length; i < max; i++) {
-    	media[i].style.display = "none";
-	}
 	media.style.display = "none";
 }
 
@@ -72,6 +68,12 @@ document.getElementById("mod").addEventListener("click", function(){
 document.getElementById("gogo").addEventListener("click", function(){
   gogo();
 });
+
+document.getElementById('input').onkeydown = function(event) {
+    if (event.keyCode == 13) {
+       gogo(); 
+    }
+}
 
 function gogo() {
 	var input = document.getElementById("input").value;
@@ -110,12 +112,10 @@ function gogo() {
 		// var w = document.getElementById("tender");
 		// showOut(w);
 		window.open('https://www.youtube.com/watch?v=HJbamdkmcCU&feature=youtu.be', '_blank');
-	} 
-	else if (resultSix == true) {
+	}
+	else {
 		var f = document.getElementById("fullPage");
-		showOut(f);
-		changecolors();
-	}  else {
+	 	showOut(f);
 		changecolors();
 	}
 	
