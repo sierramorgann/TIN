@@ -4,9 +4,9 @@
 
 body {
 	background: linear-gradient(45deg, rgb(255,123,172), rgb(255,0,0), rgb(255,123,172), rgb(255,0,0));
-	-webkit-animation: Gradient 50s ease infinite;
-	-moz-animation: Gradient 50s ease infinite;
-	animation: Gradient 50s ease infinite;
+	-webkit-animation: Gradient 20s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
 	background-size: 800% 800%;
 	text-align: center;
 }
@@ -92,6 +92,7 @@ p {
 		font-size: 20px;
 		font-family: $font;
 		font-weight: lighter;
+		border-radius: 2px;
 	}
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -126,6 +127,9 @@ p {
 		font-family: $font;
 		font-weight: lighter;
 		outline: none;
+		text-align: center;
+		border-radius: 2px;
+		padding: 13px;
 	}
 
 	button:focus, select:focus {
@@ -151,8 +155,8 @@ p {
 
 /*< ------------ Second Page Styling ------------- >*/
 #mod {
-	height: 98vh;
-	width: 98vw;
+	height: 99vh;
+	width: 99vw;
 	position: relative;
 	text-align: center;
 
@@ -183,14 +187,8 @@ p {
 }
 
 #fullPage {
-	top: 0%;
 	width: 100%;
 	height: 98vh;
-	background-color: black;
-	background-image: url("../img/SVG/Asset1.svg");
-	background-repeat: no-repeat;
-	background-size: 60%;
-	background-position: center;
 	margin: 0;
 	padding: 0;
 	display: none;
@@ -200,14 +198,6 @@ p {
 		font-family: Helvetica;
 		font-weight: bold;
 		font-size: 93px;
-		margin-top: 13%;
-	}
-
-	.bottomTxtBlk {
-		letter-spacing: -1px;
-		width: 100%;
-		padding: 0;
-		margin-top: -5%;
 	}
 }
 
@@ -234,7 +224,7 @@ p {
 
 /*< ----------------------- Meida Queries ------------>*/
 
-@media (min-width: $break-large) {
+/*@media (min-width: $break-large) {
 	.inputbutton {
 		top: 47%;
 
@@ -262,7 +252,7 @@ p {
 			width: 100%;
 		}
 	}
-}
+}*/
 
 @media (max-width: $break-med) {
 
@@ -283,11 +273,13 @@ p {
 		}
 
 		input[type=text] {
-			padding: 7px;
+			padding: 5px;
 		}
 
 		button {
-			height: 60px;
+			height: 55px;
+			width: 15%;
+			margin: 0;
 		}
 	}
 
@@ -318,23 +310,94 @@ p {
 
 	#fullPage {
 		background-size: 99%;
-		height: 100vh;
-		width: 100vw;
+		height: 98vh;
+		width: 96vw;
 
 		.bigTxt {
-			font-size: 36px;
-			margin-top: 71%;
-		}
-		.bottomTxtBlk {
-			margin-top: 0;
+			font-size: 39px;
+			margin-top: 7%;
 		}
 	}
 }
+/*
+@media (min-height: 1024px) and (max-width: $break-med) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 97vw;
 
-@media (max-width: $break-small) {
-	
-	
+		.bigTxt {
+			font-size: 74px;
+			margin-top: 48%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}
+}*/
+
+/*@media (min-height: 1366px) and (min-width: $break-large) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 97vw;
+
+		.bigTxt {
+			font-size: 74px;
+			margin-top: 48%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}
+}*/
+
+/*@media (min-height: 812px) and (max-width: $break-xsmall ) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 96vw;
+
+		.bigTxt {
+			font-size: 39px;
+			margin-top: 89%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}	
 }
 
 
+@media (max-height: 640px) and (max-width: 360px ) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 96vw;
+
+		.bigTxt {
+			font-size: 39px;
+			margin-top: 60%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}	
+}
+
+@media (min-height: 823px) and (max-width: $break-small ) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 96vw;
+
+		.bigTxt {
+			font-size: 39px;
+			margin-top: 89%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}
+}*/
 

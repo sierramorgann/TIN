@@ -1,8 +1,8 @@
 /*<---------------- Gradient Background -------------->*/
 body {
   background: linear-gradient(45deg, #ff7bac, red, #ff7bac, red);
-  -webkit-animation: Gradient 50s ease infinite;
-  animation: Gradient 50s ease infinite;
+  -webkit-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
   background-size: 800% 800%;
   text-align: center; }
 
@@ -57,7 +57,8 @@ p {
     color: white;
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
-    font-weight: lighter; }
+    font-weight: lighter;
+    border-radius: 2px; }
   .inputbutton ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: white; }
@@ -84,7 +85,10 @@ p {
     font-size: 20px;
     font-family: Arial Narrow, sans-serif;
     font-weight: lighter;
-    outline: none; }
+    outline: none;
+    text-align: center;
+    border-radius: 2px;
+    padding: 13px; }
   .inputbutton button:focus, .inputbutton select:focus {
     outline: none; }
 
@@ -103,8 +107,8 @@ p {
 
 /*< ------------ Second Page Styling ------------- >*/
 #mod {
-  height: 98vh;
-  width: 98vw;
+  height: 99vh;
+  width: 99vw;
   position: relative;
   text-align: center; }
 
@@ -125,14 +129,8 @@ p {
   margin-top: 15%; }
 
 #fullPage {
-  top: 0%;
   width: 100%;
   height: 98vh;
-  background-color: black;
-  background-image: url("../img/SVG/Asset1.svg");
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: center;
   margin: 0;
   padding: 0;
   display: none; }
@@ -140,13 +138,7 @@ p {
     color: white;
     font-family: Helvetica;
     font-weight: bold;
-    font-size: 93px;
-    margin-top: 13%; }
-  #fullPage .bottomTxtBlk {
-    letter-spacing: -1px;
-    width: 100%;
-    padding: 0;
-    margin-top: -5%; }
+    font-size: 93px; }
 
 #sndClip1 {
   display: none; }
@@ -164,23 +156,35 @@ p {
   display: none; }
 
 /*< ----------------------- Meida Queries ------------>*/
-@media (min-width: 1020px) {
-  .inputbutton {
-    top: 47%; }
-    .inputbutton input {
-      width: 200px;
-      height: 45px; }
-    .inputbutton input[type=text] {
-      padding: 7px; }
-    .inputbutton button {
-      height: 60px; }
+/*@media (min-width: $break-large) {
+	.inputbutton {
+		top: 47%;
 
-  .media {
-    top: 28%; }
+		input {
+			width: 200px;
+			height: 45px;
+		}
 
-  .vid iframe {
-    height: 41vh;
-    width: 100%; } }
+		input[type=text] {
+			padding: 7px;
+		}
+
+		button {
+			height: 60px;
+		}
+	}
+
+	.media {
+		top: 28%;
+	}
+
+	.vid {
+		iframe {
+			height: 41vh;
+			width: 100%;
+		}
+	}
+}*/
 @media (max-width: 768px) {
   .container {
     background-size: 100%; }
@@ -194,9 +198,11 @@ p {
       width: 200px;
       height: 45px; }
     .inputbutton input[type=text] {
-      padding: 7px; }
+      padding: 5px; }
     .inputbutton button {
-      height: 60px; }
+      height: 55px;
+      width: 15%;
+      margin: 0; }
 
   .vid iframe {
     height: 28vh;
@@ -216,10 +222,87 @@ p {
 
   #fullPage {
     background-size: 99%;
-    height: 100vh;
-    width: 100vw; }
+    height: 98vh;
+    width: 96vw; }
     #fullPage .bigTxt {
-      font-size: 36px;
-      margin-top: 71%; }
-    #fullPage .bottomTxtBlk {
-      margin-top: 0; } }
+      font-size: 39px;
+      margin-top: 7%; } }
+/*
+@media (min-height: 1024px) and (max-width: $break-med) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 97vw;
+
+		.bigTxt {
+			font-size: 74px;
+			margin-top: 48%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}
+}*/
+/*@media (min-height: 1366px) and (min-width: $break-large) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 97vw;
+
+		.bigTxt {
+			font-size: 74px;
+			margin-top: 48%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}
+}*/
+/*@media (min-height: 812px) and (max-width: $break-xsmall ) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 96vw;
+
+		.bigTxt {
+			font-size: 39px;
+			margin-top: 89%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}	
+}
+
+
+@media (max-height: 640px) and (max-width: 360px ) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 96vw;
+
+		.bigTxt {
+			font-size: 39px;
+			margin-top: 60%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}	
+}
+
+@media (min-height: 823px) and (max-width: $break-small ) {
+	#fullPage {
+		background-size: 99%;
+		height: 98vh;
+		width: 96vw;
+
+		.bigTxt {
+			font-size: 39px;
+			margin-top: 89%;
+		}
+		.bottomTxtBlk {
+			margin-top: 14%;
+		}
+	}
+}*/

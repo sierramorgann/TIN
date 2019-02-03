@@ -11,6 +11,7 @@ function changecolors() {
 	    	document.body.style.background = "";
     	} else {
     		change();
+    		setTimeout(function() { hideOut(); }, 550);
     	}
 	}, 50); 
 }
@@ -45,7 +46,7 @@ var bottomTxt = document.getElementById('btmTxt');
 var media = document.getElementsByClassName("media");
 
 function showOut(x) { 
-	containElement.style.background = 'none';
+	// containElement.style.background = 'none';
 	bottomTxt.style.display = 'none';
 	button.style.display = 'none';
 	input.style.display = 'none';
@@ -53,7 +54,7 @@ function showOut(x) {
 }
 
 function hideOut() {
-	containElement.style.background = '';
+	// containElement.style.background = '';
 	bottomTxt.style.display = '';
 	button.style.display = '';
 	input.style.display = '';
@@ -85,28 +86,35 @@ function gogo() {
 
 	// if result is correct take to next page
 	if (resultOne == true) {
-		var m = document.getElementById("sndClip1");
-		showOut(m);
+		// var m = document.getElementById("sndClip1");
+		// showOut(m);
+		window.open('https://soundcloud.com/callhimtin/untitled-6c/s-QnfXI', '_blank');
+
 	} 
 	else if (resultTwo == true) {
-		var y = document.getElementById("sndClip2");
-		showOut(y);
+		// var y = document.getElementById("sndClip2");
+		// showOut(y);
+		window.open('https://soundcloud.com/callhimtin/monument-2c', '_blank');
 	} 
 	else if (resultThree == true) {
-		var z = document.getElementById("btsPhotos");
-		showOut(z);
+		// var z = document.getElementById("btsPhotos");
+		// showOut(z);
+		window.open('http://www.instagram.com/99centdreaming', '_blank');
 	} 
 	else if (resultFour == true) {
-		var q = document.getElementById("rgb");
-		showOut(q);
+		// var q = document.getElementById("rgb");
+		// showOut(q);
+		window.open('https://www.youtube.com/watch?v=MLmfywGBl74', '_blank');
 	} 
 	else if (resultFive == true) {
-		var w = document.getElementById("tender");
-		showOut(w);
+		// var w = document.getElementById("tender");
+		// showOut(w);
+		window.open('https://www.youtube.com/watch?v=HJbamdkmcCU&feature=youtu.be', '_blank');
 	} 
 	else if (resultSix == true) {
 		var f = document.getElementById("fullPage");
 		showOut(f);
+		changecolors();
 	}  else {
 		changecolors();
 	}
