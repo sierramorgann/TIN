@@ -96,7 +96,7 @@ function gogo() {
 	else if (resultTwo == true) {
 		// var y = document.getElementById("sndClip2");
 		// showOut(y);
-		window.open('https://soundcloud.com/callhimtin/monument-2c', '_blank');
+		window.open('https://soundcloud.com/callhimtin/monument-2c/s-9hZmf', '_blank');
 	} 
 	else if (resultThree == true) {
 		// var z = document.getElementById("btsPhotos");
